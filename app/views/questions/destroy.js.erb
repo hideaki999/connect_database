@@ -1,0 +1,4 @@
+$(".search_result_field").html("<%= j(render partial: 'question', locals: { questions: @questions,question_searchs: @question_searchs }) %>")
+
+
+$(".tag_field").html("<%= j(render partial: 'tags', locals: { tag_list: @tag_list }) %>")

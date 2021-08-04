@@ -1,0 +1,17 @@
+.main_field {
+  display: flex;
+  height: 100vh;
+  padding-top: 90px;
+}
+
+.tag_field {
+  width: 300px;
+  background-color: black;
+  overflow: scroll;
+}
+
+.search_result_field {
+  width: calc(100vw - 300px);
+  background-color: beige;
+  overflow: scroll;
+}

@@ -1,0 +1,15 @@
+/* .tag_list {
+  display: block;
+} */
+
+.tag_field {
+  text-align: center;
+}
+
+.tags_list {
+  color: white;
+}
+
+.tag_list:hover {
+  color: rgb(25, 192, 61);
+}

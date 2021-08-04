@@ -1,0 +1,171 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background: #f2f2f2;
+  font-family: "Open Sans", sans-serif;
+}
+
+.search_field {
+  width: 100%;
+  background-color: skyblue;
+  position: fixed;
+  z-index: 999;
+  height: 90px;
+}
+
+.search form {
+  margin: 0 auto;
+  width: 30%;
+  display: flex;
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 25%;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+}
+
+.search_keyword {
+  width: 100%;
+  border: 3px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: #00b4cc;
+}
+
+.search_button {
+  width: 60px;
+  height: 36px;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.search_result {
+  margin: 0 auto;
+  background-color: #62bdc8;
+  margin-top: 30px;
+  width: 50%;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 2px 2px 4px gray;
+  position: relative;
+}
+
+.result_edit_delete {
+  position: absolute;
+  top: 2px;
+  right: 20px;
+}
+
+.result_edit,
+.result_delete {
+  padding: 8px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.result_edit:hover,
+.result_delete:hover {
+  background-color: #a4eb84;
+}
+
+.new {
+  position: absolute;
+  top: 1px;
+  right: 70px;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.new_link img {
+  width: 70px;
+  height: 70px;
+}
+
+.new_link {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+.new_link {
+  transition: 0.7s;
+}
+
+.fukidashi_field {
+  position: absolute;
+  top: 65px;
+  right: 66px;
+}
+
+.fuki {
+  position: relative;
+  display: none;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  background: #a4eb84;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.fuki:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #a4eb84;
+  z-index: 0;
+}
+
+.ansers {
+  margin-top: 30px;
+}
+
+/* .search_result_field {
+  padding-top: 80px;
+} */
+
+.icon_db {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  bottom: -100px;
+  right: 0px;
+  transition: 1s;
+}
+
+.icon_db:hover {
+  width: 250px;
+  height: 250px;
+  position: fixed;
+  bottom: 30px;
+  right: 0px;
+  transition: 1s;
+}
+
+.connect_title {
+  font-size: 1.6em;
+}

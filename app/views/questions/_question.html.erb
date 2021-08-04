@@ -1,0 +1,41 @@
+<div class="search_result_field">
+<%# 検索されたデータある場合 %>
+    <% if question_searchs.present? %>
+        <% question_searchs.each do |question| %>
+        <div class="search_result">
+            <div class="question">
+                <%= markdown(question.question).html_safe%>
+                <br>---------------------------------------------
+            </div>
+            <% question.answers.each do |answer|%>
+                <div class="ansers">
+                    <%= markdown(answer.answer).html_safe%>
+                </div>
+                <div class="result_edit_delete">
+                    <p class="result_edit"><%= link_to '編集', edit_question_path(question) %></p>
+                    <p class="result_delete"><%= link_to '削除', question_path(question), method: :delete,remote: true %></p>
+                </div>
+            <% end %>
+        </div>
+        <% end %>
+    <% else %>
+    <%# 検索なしの場合 %>
+        <% questions.each do |question| %>
+            <div class="search_result">
+                <div class="question">
+                    <%= markdown(question.question).html_safe%>
+                    <br>---------------------------------------------
+                </div>
+                <% question.answers.each do |answer|%>
+                    <div class="ansers">
+                        <%= markdown(answer.answer).html_safe%>
+                    </div>
+                    <div class="result_edit_delete">
+                        <p class="result_edit"><%= link_to '編集', edit_question_path(question) %></p>
+                        <p class="result_delete"><%= link_to '削除', question_path(question), method: :delete,remote: true %></p>
+                    </div>
+                <% end %>
+            </div>
+        <% end %>
+    <% end %>
+</div>

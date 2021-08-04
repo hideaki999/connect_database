@@ -1,0 +1,29 @@
+<div class="search_field">
+    <%= link_to  root_path, method: :get, class: :header_img do %>
+        <%= image_tag("computer_server.png") %>
+        <span class="connect_title">ConnectDB</span>
+    <% end %>
+    <div class="search">
+        <%= form_with url: search_path, method: :get,local: true do |form| %>
+            <%= form.text_field :keyword, class: "search_keyword"  %>
+            <%= form.submit "検索" , class: "search_button" %>
+        <% end %>
+    </div>
+    <div class="new">
+        <%= link_to image_tag("post.png"), "/questions/new", method: :get, class: :new_link %>
+    </div>
+    <div class="fukidashi_field"><p class="fuki">投稿する</p></div>
+</div>
+
+
+<div class="main_field">
+    <div class="tag_field">
+        <p class="tags_list">タグ一覧</p>
+        <% @tag_list.each do |list|%>
+                <p>【<%= link_to "#{list.tag_name}(#{list.questions.count})" ,tag_question_path(tag_id: list.id),class: "tag_list"%>
+                <%= link_to image_tag("delete.png") ,tag_path(list), method: :delete, data: {confirm: "本当に削除しますか？"} %>】</p>
+        <% end %>
+    </div>
+
+    <%= render partial: 'question', locals: { questions: @questions,question_searchs: @question_searchs } %>
+</div>
