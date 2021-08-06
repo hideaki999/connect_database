@@ -7,7 +7,7 @@ class Question < ApplicationRecord
 
 
     def self.search(keyword)
-        where('question like?', "#{keyword}%")
+        where('question like?', "%#{keyword}%")
     end
 
     def save_tag(sent_tags)

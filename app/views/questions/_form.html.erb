@@ -8,9 +8,13 @@
         <h2>編集</h2>
         </div>
         <span>付いているタグ</span>
-        <% @tags.each do |tag| %>
-          <p><%= "・#{tag.tag_name}" %></p>
-        <% end %>
+        <% if @tags.present? %>
+          <% @tags.each do |tag| %>
+            <p><%= "・#{tag.tag_name}" %></p>
+          <% end %>
+        <%else%>
+            <p>・付いているタグはありません</p>
+        <%end%>
     <% end %>
 
     <%= form.text_field :tag_name,placeholder: "タグを入力してください(半角スペースで複数指定できます) 例:params form",class: "form_question_tag_area" %>
