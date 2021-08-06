@@ -1,7 +1,11 @@
+<div class="search_field">
+    <%= link_to  root_path, method: :get, class: :header_img do %>
+        <%= image_tag("database1.png") %>
+        <span class="connect_title">ConnectDB</span>
+    <% end %>
+</div>
+
+
 <%= render partial: 'form', locals: { question: @question } %>
 
 
-<%= link_to  root_path, method: :get, class: :header_img do %>
-        <%= image_tag("computer_server.png") %>
-        <span class="connect_title_new">トップに戻る</span>
-<% end %>

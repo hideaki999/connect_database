@@ -13,7 +13,7 @@
         <% end %>
     <% end %>
 
-    <%= form.text_field :tag_name,placeholder: "タグを入力してください",class: "form_question_tag_area" %>
+    <%= form.text_field :tag_name,placeholder: "タグを入力してください(半角スペースで複数指定できます) 例:params form",class: "form_question_tag_area" %>
     <%= form.text_area :question, placeholder: placeholder_new_line_question,class: "form_question_text_area" ,size: "30x10" %>
 
     <%= form.fields_for :answers do |answer| %>

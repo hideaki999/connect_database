@@ -7,10 +7,20 @@ body {
 
 .search_field {
   width: 100%;
-  background-color: skyblue;
+  background-color: #f5f5dd;
   position: fixed;
   z-index: 999;
   height: 90px;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0 0 10px rgb(51 51 51 / 60%);
+}
+
+.connect_title {
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  color: #00b4cc;
+  text-shadow: 1px 1px 1px #6b6b6b;
 }
 
 .search form {

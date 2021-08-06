@@ -11,8 +11,6 @@ class QuestionsController < ApplicationController
     end
 
     def create
-        # Question.create(question_params)
-
         question = Question.new(question_params)
         tag_list = params[:question][:tag_name].split(nil)
         if question.save

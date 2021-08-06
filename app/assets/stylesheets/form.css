@@ -1,11 +1,12 @@
 .form_new_edit {
-  max-width: 600px;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
   background-color: #fafafa;
+  padding-top: 90px;
 }
 
 .head {
@@ -68,7 +69,12 @@
 }
 
 .form_question_tag_area {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  padding: 15px 10px 10px;
+  width: 75%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  background: #fafafa;
 }
 
 .connect_title_new,
