@@ -14,9 +14,8 @@
  *= require_self
  */
 
-header {
-  /* height: 100px; */
-  background-color: skyblue;
+body {
+  background-color: #f5f5dd;
 }
 
 a {
